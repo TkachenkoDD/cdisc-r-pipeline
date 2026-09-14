@@ -1,0 +1,13 @@
+.posit
+.Rhistory
+.Rproj
+.Rproj.user/
+*.Rproj
+
+02_adam/00_doc/ADAM_browser_spec.html
+02_adam/00_doc/define-v1-updated-html.xsl
+02_adam/val/prog/01_convertor_ADAM_spec_for_P21.R
+
+03_tlf/00_doc/ADAM_browser_spec.html
+
+NUL

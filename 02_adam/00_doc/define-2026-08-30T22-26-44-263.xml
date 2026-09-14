@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="define2-0-0.xsl"?>
+<ODM
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns="http://www.cdisc.org/ns/odm/v1.3"
+     xmlns:def="http://www.cdisc.org/ns/def/v2.0"
+     xmlns:arm="http://www.cdisc.org/ns/arm/v1.0"
+     ODMVersion="1.3.2"
+     FileType="Snapshot"
+     FileOID="CDISCPILOT01.ADaMIG.1.3"
+     CreationDateTime="2026-08-30T22:26:44+02:00"
+     SourceSystem="Pinnacle 21 Community"
+     SourceSystemVersion="4.1.0">
+   <Study OID="CDISCPILOT01.ADaMIG.1.3">
+      <GlobalVariables>
+         <StudyName>CDISCPILOT01</StudyName>
+         <StudyDescription/>
+         <ProtocolName/>
+      </GlobalVariables>
+      <MetaDataVersion OID="MDV.CDISCPILOT01.ADaMIG.1.3" Name="Study CDISCPILOT01 Data Definitions"
+                       def:DefineVersion="2.0.0"
+                       def:StandardName="ADaM-IG"
+                       def:StandardVersion="1.3">
+         <ItemGroupDef OID="IG.ADSL" Name="ADSL" Repeating="Yes" IsReferenceData=""
+                       SASDatasetName="ADSL"
+                       Purpose="Analysis"
+                       def:Structure="One record per subject"
+                       def:Class="SUBJECT LEVEL ANALYSIS DATASET"
+                       def:ArchiveLocationID="LF.ADSL">
+            <Description>
+               <TranslatedText>Subject-Level Analysis</TranslatedText>
+            </Description>
+            <ItemRef ItemOID="IT.ADSL.STUDYID" Mandatory="Yes" OrderNumber="1"/>
+            <ItemRef ItemOID="IT.ADSL.USUBJID" Mandatory="Yes" OrderNumber="2" KeySequence="1"/>
+            <ItemRef ItemOID="IT.ADSL.SUBJID" Mandatory="Yes" OrderNumber="3"/>
+            <ItemRef ItemOID="IT.ADSL.SITEID" Mandatory="Yes" OrderNumber="4"/>
+            <ItemRef ItemOID="IT.ADSL.SITEGR1" Mandatory="No" OrderNumber="5"
+                     MethodOID="MT.MT.SITEGR1"/>
+            <ItemRef ItemOID="IT.ADSL.ARM" Mandatory="Yes" OrderNumber="6"/>
+            <ItemRef ItemOID="IT.ADSL.TRT01P" Mandatory="Yes" OrderNumber="7"/>
+            <ItemRef ItemOID="IT.ADSL.TRT01PN" Mandatory="No" OrderNumber="8"
+                     MethodOID="MT.MT.TRT01PN"/>
+            <ItemRef ItemOID="IT.ADSL.TRT01A" Mandatory="No" OrderNumber="9"
+                     MethodOID="MT.MT.TRT01A"/>
+            <ItemRef ItemOID="IT.ADSL.TRT01AN" Mandatory="No" OrderNumber="10"
+                     MethodOID="MT.MT.TRT01AN"/>
+            <ItemRef ItemOID="IT.ADSL.TRTSDT" Mandatory="No" OrderNumber="11"
+                     MethodOID="MT.MT.TRTSDT"/>
+            <ItemRef ItemOID="IT.ADSL.TRTEDT" Mandatory="No" OrderNumber="12"
+                     MethodOID="MT.MT.TRTEDT"/>
+            <ItemRef ItemOID="IT.ADSL.TRTDUR" Mandatory="No" OrderNumber="13"
+                     MethodOID="MT.MT.TRTDUR"/>
+            <ItemRef ItemOID="IT.ADSL.AVGDD" Mandatory="No" OrderNumber="14" MethodOID="MT.MT.AVGDD"/>
+            <ItemRef ItemOID="IT.ADSL.CUMDOSE" Mandatory="No" OrderNumber="15"
+                     MethodOID="MT.MT.CUMDOSE"/>
+            <ItemRef ItemOID="IT.ADSL.AGE" Mandatory="Yes" OrderNumber="16"/>
+            <ItemRef ItemOID="IT.ADSL.AGEGR1" Mandatory="No" OrderNumber="17"
+                     MethodOID="MT.MT.AGEGR1"/>
+            <ItemRef ItemOID="IT.ADSL.AGEGR1N" Mandatory="No" OrderNumber="18"
+                     MethodOID="MT.MT.AGEGR1N"/>
+            <ItemRef ItemOID="IT.ADSL.AGEU" Mandatory="Yes" OrderNumber="19"/>
+            <ItemRef ItemOID="IT.ADSL.RACE" Mandatory="Yes" OrderNumber="20"/>
+            <ItemRef ItemOID="IT.ADSL.RACEN" Mandatory="No" OrderNumber="21" MethodOID="MT.MT.RACEN"/>
+            <ItemRef ItemOID="IT.ADSL.SEX" Mandatory="Yes" OrderNumber="22"/>
+            <ItemRef ItemOID="IT.ADSL.ETHNIC" Mandatory="No" OrderNumber="23"/>
+            <ItemRef ItemOID="IT.ADSL.SAFFL" Mandatory="No" OrderNumber="24" MethodOID="MT.MT.SAFFL"/>
+            <ItemRef ItemOID="IT.ADSL.ITTFL" Mandatory="No" OrderNumber="25" MethodOID="MT.MT.ITTFL"/>
+            <ItemRef ItemOID="IT.ADSL.EFFFL" Mandatory="No" OrderNumber="26" MethodOID="MT.MT.EFFFL"/>
+            <ItemRef ItemOID="IT.ADSL.COMP8FL" Mandatory="No" OrderNumber="27"
+                     MethodOID="MT.MT.COMP8FL"/>
+            <ItemRef ItemOID="IT.ADSL.COMP16FL" Mandatory="No" OrderNumber="28"
+                     MethodOID="MT.MT.COMP16FL"/>
+            <ItemRef ItemOID="IT.ADSL.COMP24FL" Mandatory="No" OrderNumber="29"
+                     MethodOID="MT.MT.COMP24FL"/>
+            <ItemRef ItemOID="IT.ADSL.DISCONFL" Mandatory="No" OrderNumber="30"
+                     MethodOID="MT.MT.DISCONFL"/>
+            <ItemRef ItemOID="IT.ADSL.DSRAEFL" Mandatory="No" OrderNumber="31"
+                     MethodOID="MT.MT.DSRAEFL"/>
+            <ItemRef ItemOID="IT.ADSL.DTHFL" Mandatory="No" OrderNumber="32"/>
+            <ItemRef ItemOID="IT.ADSL.BMIBL" Mandatory="No" OrderNumber="33" MethodOID="MT.MT.BMIBL"/>
+            <ItemRef ItemOID="IT.ADSL.BMIBLGR1" Mandatory="No" OrderNumber="34"
+                     MethodOID="MT.MT.BMIBLGR1"/>
+            <ItemRef ItemOID="IT.ADSL.HEIGHTBL" Mandatory="No" OrderNumber="35"
+                     MethodOID="MT.MT.HEIGHTBL"/>
+            <ItemRef ItemOID="IT.ADSL.WEIGHTBL" Mandatory="No" OrderNumber="36"
+                     MethodOID="MT.MT.WEIGHTBL"/>
+            <ItemRef ItemOID="IT.ADSL.EDUCLVL" Mandatory="No" OrderNumber="37"
+                     MethodOID="MT.MT.EDUCLVL"/>
+            <ItemRef ItemOID="IT.ADSL.DISONSDT" Mandatory="No" OrderNumber="38"
+                     MethodOID="MT.MT.DISONSDT"/>
+            <ItemRef ItemOID="IT.ADSL.DURDIS" Mandatory="No" OrderNumber="39"
+                     MethodOID="MT.MT.DURDIS"/>
+            <ItemRef ItemOID="IT.ADSL.DURDSGR1" Mandatory="No" OrderNumber="40"
+                     MethodOID="MT.MT.DURDSGR1"/>
+            <ItemRef ItemOID="IT.ADSL.VISIT1DT" Mandatory="No" OrderNumber="41"
+                     MethodOID="MT.MT.VISIT1DT"/>
+            <ItemRef ItemOID="IT.ADSL.RFSTDTC" Mandatory="No" OrderNumber="42"/>
+            <ItemRef ItemOID="IT.ADSL.RFENDTC" Mandatory="No" OrderNumber="43"/>
+            <ItemRef ItemOID="IT.ADSL.VISNUMEN" Mandatory="No" OrderNumber="44"
+                     MethodOID="MT.MT.VISNUMEN"/>
+            <ItemRef ItemOID="IT.ADSL.RFENDT" Mandatory="No" OrderNumber="45"
+                     MethodOID="MT.MT.RFENDT"/>
+            <ItemRef ItemOID="IT.ADSL.DCDECOD" Mandatory="No" OrderNumber="46"
+                     MethodOID="MT.MT.DCDECOD"/>
+            <ItemRef ItemOID="IT.ADSL.DCREASCD" Mandatory="No" OrderNumber="47"
+                     MethodOID="MT.MT.DCREASCD"/>
+            <ItemRef ItemOID="IT.ADSL.MMSETOT" Mandatory="No" OrderNumber="48"
+                     MethodOID="MT.MT.MMSETOT"/>
+            <def:leaf ID="LF.ADSL" xlink:href="adsl.xpt">
+               <def:title>adsl.xpt</def:title>
+            </def:leaf>
+         </ItemGroupDef>
+         <ItemDef OID="IT.ADSL.STUDYID" Name="STUDYID" DataType="text" Length="12"
+                  SASFieldName="STUDYID">
+            <Description>
+               <TranslatedText>Study Identifier</TranslatedText>
+            </Description>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.STUDYID</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.USUBJID" Name="USUBJID" DataType="text" Length="11"
+                  SASFieldName="USUBJID">
+            <Description>
+               <TranslatedText>Unique Subject Identifier</TranslatedText>
+            </Description>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.USUBJID</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.SUBJID" Name="SUBJID" DataType="text" Length="4"
+                  SASFieldName="SUBJID">
+            <Description>
+               <TranslatedText>Subject Identifier for the Study</TranslatedText>
+            </Description>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.SUBJID</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.SITEID" Name="SITEID" DataType="text" Length="3"
+                  SASFieldName="SITEID">
+            <Description>
+               <TranslatedText>Study Site Identifier</TranslatedText>
+            </Description>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.SITEID</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.SITEGR1" Name="SITEGR1" DataType="text" Length="3"
+                  SASFieldName="SITEGR1">
+            <Description>
+               <TranslatedText>Pooled Site Group 1</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.ARM" Name="ARM" DataType="text" Length="20" SASFieldName="ARM">
+            <Description>
+               <TranslatedText>Description of Planned Arm</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.ARM"/>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.ARM</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.TRT01P" Name="TRT01P" DataType="text" Length="20"
+                  SASFieldName="TRT01P">
+            <Description>
+               <TranslatedText>Planned Treatment for Period 01</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.ARM"/>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.ARM</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.TRT01PN" Name="TRT01PN" DataType="integer" Length="8"
+                  SASFieldName="TRT01PN">
+            <Description>
+               <TranslatedText>Planned Treatment for Period 01 (N)</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.ARMN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.TRT01A" Name="TRT01A" DataType="text" Length="20"
+                  SASFieldName="TRT01A">
+            <Description>
+               <TranslatedText>Actual Treatment for Period 01</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.ARM"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.TRT01AN" Name="TRT01AN" DataType="integer" Length="8"
+                  SASFieldName="TRT01AN">
+            <Description>
+               <TranslatedText>Actual Treatment for Period 01 (N)</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.ARMN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.TRTSDT" Name="TRTSDT" DataType="integer" Length="8"
+                  SASFieldName="TRTSDT"
+                  def:DisplayFormat="DATE9.">
+            <Description>
+               <TranslatedText>Date of First Exposure to Treatment</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.TRTEDT" Name="TRTEDT" DataType="integer" Length="8"
+                  SASFieldName="TRTEDT"
+                  def:DisplayFormat="DATE9.">
+            <Description>
+               <TranslatedText>Date of Last Exposure to Treatment</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.TRTDUR" Name="TRTDUR" DataType="integer" Length="8"
+                  SASFieldName="TRTDUR">
+            <Description>
+               <TranslatedText>Duration of Treatment (days)</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.AVGDD" Name="AVGDD" DataType="float" Length="8"
+                  SignificantDigits="1"
+                  SASFieldName="AVGDD">
+            <Description>
+               <TranslatedText>Avg Daily Dose (as planned)</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.CUMDOSE" Name="CUMDOSE" DataType="integer" Length="8"
+                  SASFieldName="CUMDOSE">
+            <Description>
+               <TranslatedText>Cumulative Dose (as planned)</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.AGE" Name="AGE" DataType="integer" Length="8" SASFieldName="AGE">
+            <Description>
+               <TranslatedText>Age</TranslatedText>
+            </Description>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.AGE</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.AGEGR1" Name="AGEGR1" DataType="text" Length="5"
+                  SASFieldName="AGEGR1">
+            <Description>
+               <TranslatedText>Pooled Age Group 1</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.AGEGR1"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.AGEGR1N" Name="AGEGR1N" DataType="integer" Length="8"
+                  SASFieldName="AGEGR1N">
+            <Description>
+               <TranslatedText>Pooled Age Group 1 (N)</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.AGEGR1N"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.AGEU" Name="AGEU" DataType="text" Length="5" SASFieldName="AGEU">
+            <Description>
+               <TranslatedText>Age Units</TranslatedText>
+            </Description>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.AGEU</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.RACE" Name="RACE" DataType="text" Length="32" SASFieldName="RACE">
+            <Description>
+               <TranslatedText>Race</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.RACE"/>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.RACE</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.RACEN" Name="RACEN" DataType="integer" Length="8"
+                  SASFieldName="RACEN">
+            <Description>
+               <TranslatedText>Race (N)</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.RACEN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.SEX" Name="SEX" DataType="text" Length="1" SASFieldName="SEX">
+            <Description>
+               <TranslatedText>Sex</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.SEX"/>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.SEX</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.ETHNIC" Name="ETHNIC" DataType="text" Length="22"
+                  SASFieldName="ETHNIC">
+            <Description>
+               <TranslatedText>Ethnicity</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.ETHNIC"/>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.ETHNIC</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.SAFFL" Name="SAFFL" DataType="text" Length="1"
+                  SASFieldName="SAFFL">
+            <Description>
+               <TranslatedText>Safety Population Flag</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.YN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.ITTFL" Name="ITTFL" DataType="text" Length="1"
+                  SASFieldName="ITTFL">
+            <Description>
+               <TranslatedText>Intent-To-Treat Population Flag</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.YN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.EFFFL" Name="EFFFL" DataType="text" Length="1"
+                  SASFieldName="EFFFL">
+            <Description>
+               <TranslatedText>Efficacy Population Flag</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.YN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.COMP8FL" Name="COMP8FL" DataType="text" Length="1"
+                  SASFieldName="COMP8FL">
+            <Description>
+               <TranslatedText>Completers of Week 8 Population Flag</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.YN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.COMP16FL" Name="COMP16FL" DataType="text" Length="1"
+                  SASFieldName="COMP16FL">
+            <Description>
+               <TranslatedText>Completers of Week 16 Population Flag</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.YN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.COMP24FL" Name="COMP24FL" DataType="text" Length="1"
+                  SASFieldName="COMP24FL">
+            <Description>
+               <TranslatedText>Completers of Week 24 Population Flag</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.YN"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.DISCONFL" Name="DISCONFL" DataType="text" Length="1"
+                  SASFieldName="DISCONFL">
+            <Description>
+               <TranslatedText>Did the Subject Discontinue the Study?</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.Y_BLANK"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.DSRAEFL" Name="DSRAEFL" DataType="text" Length="1"
+                  SASFieldName="DSRAEFL">
+            <Description>
+               <TranslatedText>Discontinued due to AE?</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.Y_BLANK"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.DTHFL" Name="DTHFL" DataType="text" Length="1"
+                  SASFieldName="DTHFL">
+            <Description>
+               <TranslatedText>Subject Died?</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.Y_BLANK"/>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.DTHFL</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.BMIBL" Name="BMIBL" DataType="float" Length="8"
+                  SignificantDigits="1"
+                  SASFieldName="BMIBL">
+            <Description>
+               <TranslatedText>Baseline BMI (kg/m^2)</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.BMIBLGR1" Name="BMIBLGR1" DataType="text" Length="6"
+                  SASFieldName="BMIBLGR1">
+            <Description>
+               <TranslatedText>Pooled Baseline BMI Group 1</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.BMICAT"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.HEIGHTBL" Name="HEIGHTBL" DataType="float" Length="8"
+                  SignificantDigits="1"
+                  SASFieldName="HEIGHTBL">
+            <Description>
+               <TranslatedText>Baseline Height (cm)</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.WEIGHTBL" Name="WEIGHTBL" DataType="float" Length="8"
+                  SignificantDigits="1"
+                  SASFieldName="WEIGHTBL">
+            <Description>
+               <TranslatedText>Baseline Weight (kg)</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.EDUCLVL" Name="EDUCLVL" DataType="integer" Length="8"
+                  SASFieldName="EDUCLVL">
+            <Description>
+               <TranslatedText>Years of Education</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.DISONSDT" Name="DISONSDT" DataType="integer" Length="8"
+                  SASFieldName="DISONSDT"
+                  def:DisplayFormat="DATE9.">
+            <Description>
+               <TranslatedText>Date of Onset of Disease</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.DURDIS" Name="DURDIS" DataType="float" Length="8"
+                  SignificantDigits="1"
+                  SASFieldName="DURDIS">
+            <Description>
+               <TranslatedText>Duration of Disease (Months)</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.DURDSGR1" Name="DURDSGR1" DataType="text" Length="4"
+                  SASFieldName="DURDSGR1">
+            <Description>
+               <TranslatedText>Pooled Disease Duration Group 1</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.VISIT1DT" Name="VISIT1DT" DataType="integer" Length="8"
+                  SASFieldName="VISIT1DT"
+                  def:DisplayFormat="DATE9.">
+            <Description>
+               <TranslatedText>Date of Visit 1</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.RFSTDTC" Name="RFSTDTC" DataType="datetime" Length="20.0"
+                  SASFieldName="RFSTDTC">
+            <Description>
+               <TranslatedText>Subject Reference Start Date/Time</TranslatedText>
+            </Description>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.RFSTDTC</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.RFENDTC" Name="RFENDTC" DataType="datetime" Length="20.0"
+                  SASFieldName="RFENDTC">
+            <Description>
+               <TranslatedText>Subject Reference End Date/Time</TranslatedText>
+            </Description>
+            <def:Origin Type="Predecessor">
+               <Description>
+                  <TranslatedText>DM.RFENDTC</TranslatedText>
+               </Description>
+            </def:Origin>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.VISNUMEN" Name="VISNUMEN" DataType="integer" Length="8"
+                  SASFieldName="VISNUMEN">
+            <Description>
+               <TranslatedText>End of Trt Visit (Vis 12 or Early Term.)</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.RFENDT" Name="RFENDT" DataType="integer" Length="8"
+                  SASFieldName="RFENDT"
+                  def:DisplayFormat="DATE9.">
+            <Description>
+               <TranslatedText>Date of Discontinuation/Completion</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.DCDECOD" Name="DCDECOD" DataType="text" Length="27"
+                  SASFieldName="DCDECOD">
+            <Description>
+               <TranslatedText>Standardized Disposition Term</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.DISCCD"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.DCREASCD" Name="DCREASCD" DataType="text" Length="18"
+                  SASFieldName="DCREASCD">
+            <Description>
+               <TranslatedText>Reason for Discontinuation</TranslatedText>
+            </Description>
+            <CodeListRef CodeListOID="CL.DISCREAS"/>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <ItemDef OID="IT.ADSL.MMSETOT" Name="MMSETOT" DataType="integer" Length="8"
+                  SASFieldName="MMSETOT">
+            <Description>
+               <TranslatedText>MMSE Total</TranslatedText>
+            </Description>
+            <def:Origin Type="Derived"/>
+         </ItemDef>
+         <CodeList OID="CL.AGEGR1" Name="AGEGR1" DataType="">
+            <CodeListItem CodedValue="&lt;65">
+               <Decode>
+                  <TranslatedText>&lt;65</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="65-80">
+               <Decode>
+                  <TranslatedText>65-80</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="&gt;80">
+               <Decode>
+                  <TranslatedText>&gt;80</TranslatedText>
+               </Decode>
+            </CodeListItem>
+         </CodeList>
+         <CodeList OID="CL.AGEGR1N" Name="AGEGR1N" DataType="">
+            <CodeListItem CodedValue="1">
+               <Decode>
+                  <TranslatedText>&lt;65</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="2">
+               <Decode>
+                  <TranslatedText>65-80</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="3">
+               <Decode>
+                  <TranslatedText>&gt;80</TranslatedText>
+               </Decode>
+            </CodeListItem>
+         </CodeList>
+         <CodeList OID="CL.ARM" Name="ARM" DataType="">
+            <CodeListItem CodedValue="Screen Failure">
+               <Decode>
+                  <TranslatedText>Screen Failure</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Placebo">
+               <Decode>
+                  <TranslatedText>Placebo</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Xanomeline Low Dose">
+               <Decode>
+                  <TranslatedText>Xanomeline Low Dose</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Xanomeline High Dose">
+               <Decode>
+                  <TranslatedText>Xanomeline High Dose</TranslatedText>
+               </Decode>
+            </CodeListItem>
+         </CodeList>
+         <CodeList OID="CL.ARMN" Name="ARMN" DataType="">
+            <CodeListItem CodedValue="0">
+               <Decode>
+                  <TranslatedText>Placebo</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="54">
+               <Decode>
+                  <TranslatedText>Xanomeline Low Dose</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="81">
+               <Decode>
+                  <TranslatedText>Xanomeline High Dose</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="99">
+               <Decode>
+                  <TranslatedText>Screen Failure</TranslatedText>
+               </Decode>
+            </CodeListItem>
+         </CodeList>
+         <CodeList OID="CL.BMICAT" Name="BMICAT" DataType="">
+            <CodeListItem CodedValue="&lt;25">
+               <Decode>
+                  <TranslatedText>Normal</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="25-&lt;30">
+               <Decode>
+                  <TranslatedText>Overweight</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="&gt;=30">
+               <Decode>
+                  <TranslatedText>Obese</TranslatedText>
+               </Decode>
+            </CodeListItem>
+         </CodeList>
+         <CodeList OID="CL.DISCCD" Name="DISCCD" DataType="">
+            <CodeListItem CodedValue="COMPLETED" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>COMPLETED</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="ADVERSE EVENT" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>ADVERSE EVENT</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="DEATH" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>DEATH</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="LACK OF EFFICACY" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>LACK OF EFFICACY</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="LOST TO FOLLOW-UP" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>LOST TO FOLLOW-UP</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="WITHDRAWAL BY SUBJECT" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>WITHDRAWAL BY SUBJECT</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="STUDY TERMINATED BY SPONSOR" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>STUDY TERMINATED BY SPONSOR</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="PHYSICIAN DECISION" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>PHYSICIAN DECISION</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="PROTOCOL VIOLATION" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>PROTOCOL VIOLATION</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="SCREEN FAILURE" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>SCREEN FAILURE</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <Alias Name="C66727" Context="nci:ExtCodeID"/>
+         </CodeList>
+         <CodeList OID="CL.DISCREAS" Name="DISCREAS" DataType="">
+            <CodeListItem CodedValue="Completed" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Completed</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Adverse Event" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Adverse Event</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Death" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Death</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="I/E Not Met" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>I/E Not Met</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Lack of Efficacy" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Lack of Efficacy</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Lost to Follow-up" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Lost to Follow-up</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Physician Decision" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Physician Decision</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Protocol Violation" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Protocol Violation</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Sponsor Decision" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Sponsor Decision</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Withdrew Consent" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Withdrew Consent</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Screen Failure" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Screen Failure</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <Alias Name="C66727" Context="nci:ExtCodeID"/>
+         </CodeList>
+         <CodeList OID="CL.ETHNIC" Name="ETHNIC" DataType="">
+            <CodeListItem CodedValue="NOT HISPANIC OR LATINO" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>NOT HISPANIC OR LATINO</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="HISPANIC OR LATINO" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>HISPANIC OR LATINO</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <Alias Name="C66790" Context="nci:ExtCodeID"/>
+         </CodeList>
+         <CodeList OID="CL.RACE" Name="RACE" DataType="">
+            <CodeListItem CodedValue="WHITE" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>WHITE</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="BLACK OR AFRICAN AMERICAN" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>BLACK OR AFRICAN AMERICAN</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="AMERICAN INDIAN OR ALASKA NATIVE" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>AMERICAN INDIAN OR ALASKA NATIVE</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="ASIAN" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>ASIAN</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <Alias Name="C74457" Context="nci:ExtCodeID"/>
+         </CodeList>
+         <CodeList OID="CL.RACEN" Name="RACEN" DataType="">
+            <CodeListItem CodedValue="1">
+               <Decode>
+                  <TranslatedText>WHITE</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="2">
+               <Decode>
+                  <TranslatedText>BLACK OR AFRICAN AMERICAN</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="6">
+               <Decode>
+                  <TranslatedText>AMERICAN INDIAN OR ALASKA NATIVE</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="7">
+               <Decode>
+                  <TranslatedText>ASIAN</TranslatedText>
+               </Decode>
+            </CodeListItem>
+         </CodeList>
+         <CodeList OID="CL.SEV" Name="SEV" DataType="">
+            <CodeListItem CodedValue="MILD" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>MILD</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="MODERATE" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>MODERATE</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="SEVERE" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>SEVERE</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <Alias Name="C66769" Context="nci:ExtCodeID"/>
+         </CodeList>
+         <CodeList OID="CL.SEX" Name="SEX" DataType="">
+            <CodeListItem CodedValue="F" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Female</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="M" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Male</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="U" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Unknown</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <Alias Name="C66742" Context="nci:ExtCodeID"/>
+         </CodeList>
+         <CodeList OID="CL.Y_BLANK" Name="Y_BLANK" DataType="">
+            <CodeListItem CodedValue="Y" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Yes</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <Alias Name="C66742" Context="nci:ExtCodeID"/>
+         </CodeList>
+         <CodeList OID="CL.YN" Name="YN" DataType="">
+            <CodeListItem CodedValue="N" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>No</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <CodeListItem CodedValue="Y" def:ExtendedValue="Yes">
+               <Decode>
+                  <TranslatedText>Yes</TranslatedText>
+               </Decode>
+            </CodeListItem>
+            <Alias Name="C66742" Context="nci:ExtCodeID"/>
+         </CodeList>
+         <MethodDef OID="MT.MT.AGEGR1" Name="Age Group 1 Character" Type="">
+            <Description>
+               <TranslatedText>Character variable derived from ADSL.AGEGR1N.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.AGEGR1N" Name="Age Group 1 Numeric" Type="">
+            <Description>
+               <TranslatedText>Derived based on AGE: AGEGR1N = 1 if AGE &lt; 65; AGEGR1N = 2 if 65 &lt;= AGE &lt;= 80; AGEGR1N = 3 if AGE &gt; 80.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.AVGDD" Name="Average Daily Dose" Type="">
+            <Description>
+               <TranslatedText>Calculated as: CUMDOSE / TRTDUR.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.BMIBL" Name="Baseline Body Mass Index" Type="">
+            <Description>
+               <TranslatedText>Calculated as: WEIGHTBL / ((HEIGHTBL / 100)**2).</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.BMIBLGR1" Name="Baseline BMI Group 1" Type="">
+            <Description>
+               <TranslatedText>Grouped as: 'Normal' if . &lt; BMIBL &lt; 25; 'Overweight' if 25 &lt;= BMIBL &lt; 30; 'Obese' if BMIBL &gt;= 30.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.COMP16FL" Name="Completer Week 16 Flag" Type="">
+            <Description>
+               <TranslatedText>Set to 'Y' if subject has SV.VISITNUM = 10 and ENDDT &gt;= date of visit 10. Set to 'N' otherwise.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.COMP24FL" Name="Completer Week 24 Flag" Type="">
+            <Description>
+               <TranslatedText>Set to 'Y' if subject has SV.VISITNUM = 12 and ENDDT &gt;= date of visit 12. Set to 'N' otherwise.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.COMP8FL" Name="Completer Week 8 Flag" Type="">
+            <Description>
+               <TranslatedText>Set to 'Y' if subject has SV.VISITNUM = 8 and ENDDT &gt;= date of visit 8. Set to 'N' otherwise.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.CUMDOSE" Name="Cumulative Dose" Type="">
+            <Description>
+               <TranslatedText>For ARMN=0 or 1: CUMDOSE = TRT01PN * TRTDUR. For ARMN=2: CUMDOSE will be based on 54mg per day for the number of days subject was in treatment.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.DCDECOD" Name="Standardized Discontinuation Reason" Type="">
+            <Description>
+               <TranslatedText>DS.DSDECOD where DSCAT = 'DISPOSITION EVENT'.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.DCREASCD" Name="Discontinuation Reason Code" Type="">
+            <Description>
+               <TranslatedText>Grouping of DCDECOD values to support summarizing study completion status and reason for discontinuation.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.DISCONFL" Name="Discontinued Study Flag" Type="">
+            <Description>
+               <TranslatedText>Set to 'Y' if DCREASCD ^= 'Completed'. Null otherwise.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.DISONSDT" Name="Disease Onset Date" Type="">
+            <Description>
+               <TranslatedText>MH.MHSTDTC where MHCAT = 'PRIMARY DIAGNOSIS' converted to SAS date.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.DSRAEFL" Name="Discontinued due to AE Flag" Type="">
+            <Description>
+               <TranslatedText>Set to 'Y' if DCREASCD = 'Adverse Event'. Null otherwise.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.DURDIS" Name="Duration of Disease" Type="">
+            <Description>
+               <TranslatedText>Number of months between VISIT1DT and DISONSDT.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.DURDSGR1" Name="Duration of Disease Group 1" Type="">
+            <Description>
+               <TranslatedText>Grouping DURDIS values as &lt; 12 and &gt;= 12.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.EDUCLVL" Name="Years of Education" Type="">
+            <Description>
+               <TranslatedText>SC.SCSTRESN where SC.SCTESTCD = 'YEARSEDU'.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.EFFFL" Name="Efficacy Population Flag" Type="">
+            <Description>
+               <TranslatedText>Set to 'Y' if SAFFL = 'Y' AND subject has at least one record in QS for ADAS-Cog with VISITNUM &gt; 3 AND at least one record in QS for CIBIC+. Set to 'N' otherwise.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.HEIGHTBL" Name="Baseline Height" Type="">
+            <Description>
+               <TranslatedText>VSSTRESN when VS.VSTESTCD = 'HEIGHT' and VS.VISITNUM = 1.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.ITTFL" Name="Intent-to-Treat Population Flag" Type="">
+            <Description>
+               <TranslatedText>Set to 'Y' if ARMCD ne ' '. Set to 'N' otherwise.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.MMSETOT" Name="MMSE Total Score" Type="">
+            <Description>
+               <TranslatedText>Sum of QS.QSORRES values for the subject.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.RACEN" Name="Race Code" Type="">
+            <Description>
+               <TranslatedText>Numeric code for RACE.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.RFENDT" Name="Study End Date Numeric" Type="">
+            <Description>
+               <TranslatedText>RFENDTC converted to SAS date.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.SAFFL" Name="Safety Population Flag" Type="">
+            <Description>
+               <TranslatedText>Set to 'Y' if ITTFL = 'Y' and TRTSDT is non-missing. Set to 'N' otherwise.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.SITEGR1" Name="Site Grouping 1 Derivation" Type="">
+            <Description>
+               <TranslatedText>Refer to SAP, Section 7.1 - if not pooled then SITEGR1=SITEID. If pooled, SITEGR1 will be 900.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.TRT01A" Name="Actual Treatment 01" Type="">
+            <Description>
+               <TranslatedText>TRT01A=TRT01P, i.e., no difference between actual and randomized treatment in this study.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.TRT01AN" Name="Actual Treatment 01 Code" Type="">
+            <Description>
+               <TranslatedText>Numeric code for TRT01A which corresponds to the randomized dose.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.TRT01PN" Name="Planned Treatment 01 Code" Type="">
+            <Description>
+               <TranslatedText>Numeric code for TRT01P which corresponds to the randomized dose.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.TRTDUR" Name="Treatment Duration" Type="">
+            <Description>
+               <TranslatedText>Calculated as: TRTEDT - TRTSDT + 1.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.TRTEDT" Name="Treatment End Date" Type="">
+            <Description>
+               <TranslatedText>The date of final dose (from the CRF) is EX.EXENDTC on the subject's last EX record. If the date of final dose is missing, impute based on last available treatment date.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.TRTSDT" Name="Treatment Start Date" Type="">
+            <Description>
+               <TranslatedText>SV.SVSTDTC when SV.VISITNUM=3, converted to SAS date.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.VISIT1DT" Name="Visit 1 Date" Type="">
+            <Description>
+               <TranslatedText>SV.SVSTDTC when SV.VISITNUM = 1, converted to SAS date.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.VISNUMEN" Name="End of Study Visit Number" Type="">
+            <Description>
+               <TranslatedText>If DS.VISITNUM = 13 where DSTERM = 'PROTOCOL COMPLETED' then VISNUMEN = 12, otherwise VISNUMEN = DS.VISITNUM where DSTERM = 'PROTOCOL COMPLETED'.</TranslatedText>
+            </Description>
+         </MethodDef>
+         <MethodDef OID="MT.MT.WEIGHTBL" Name="Baseline Weight" Type="">
+            <Description>
+               <TranslatedText>VSSTRESN when VS.VSTESTCD = 'WEIGHT' and VS.VISITNUM = 3.</TranslatedText>
+            </Description>
+         </MethodDef>
+      </MetaDataVersion>
+   </Study>
+</ODM>
